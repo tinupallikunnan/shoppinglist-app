@@ -6,7 +6,7 @@ describe('Visits shopping app page and tests the elements', () => {
     // Checking if an item in the list is ticked off
     // Checking if the delete button removes an item from the list
   
-    cy.contains("button", "add").should("be.visible").click();
+    cy.contains("[button-cy=addButton]", "Add").should("be.visible").click();
 
     cy.get("[input-cy=inputBox]").type("bananas");
     cy.get("[button-cy=addButton]").click();
